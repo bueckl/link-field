@@ -158,11 +158,11 @@ class WTLink extends DBField implements CompositeDBField {
          */
         static $composite_db = array(
                 "Type" => "Enum('Internal, External, Email, File', 'Internal')",
-                "Internal" => 'Int',
+                "Internal" => 'Varchar',
                 "External" => 'Varchar(255)',
                 "Email" => 'Varchar(255)',
-                "File" => 'Int',
-                'TargetBlank' => 'Boolean'
+                "File" => 'Varchar',
+                'TargetBlank' => 'Varchar'
         );
 
         function compositeDatabaseFields() {
